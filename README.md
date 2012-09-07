@@ -6,10 +6,9 @@
 ## Introduction
 
 ipforge uses python's scapy module to forge single IP packets (TCP or
-UDP) with given source and destination address and insert them into
-the network. Sample uses might be port knocking, or poking at firewall,
-IDS or other network devices. Requires root privileges on the sending
-host.
+UDP) with given source and destination address and insert them into the
+network. Sample uses might be port knocking, or poking at firewalls, IDS
+or other network devices. Requires root privileges on the sending host.
 
 ## Command line usage
 
@@ -42,7 +41,7 @@ host.
 
 ## Python module usage
 
-    #!/usr/bin/env ipforge
+    #!/usr/bin/env python
     from ipforge import ipforge
     ipforge(src='192.168.1.66', dst='192.168.1.51', dport=666, flags='S')
 
